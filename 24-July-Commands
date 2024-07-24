@@ -1,0 +1,9 @@
+ 2 docker build -t sample-example .
+   3 docker images
+   4 docker run -td --name example sample-example /bin/bash
+   5 docker exec -it example /bin/bash
+   6 clear
+   7 docker images
+   8 docker login
+   9 docker tag sample-example muralisocial123/sample-example:latest
+  10 docker push muralisocial123/sample-example:latest
